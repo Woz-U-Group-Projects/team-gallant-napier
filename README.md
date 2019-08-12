@@ -67,6 +67,6 @@ ___
 ___
 * ​Front End Framework​ :​ ​Angular
 * Back End Framework​ :​ ​Java Spring
-* Styled With​ :​ C​ SS/ Bootstrap or Angular-Material 
+* Styled With​ :​ C​SS/ Bootstrap or Angular-Material 
 * Database​ :​ ​SQLite
 * Responsive​ :​ ​Yes
