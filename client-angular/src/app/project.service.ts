@@ -7,11 +7,16 @@ import { Observable } from "rxjs";
   providedIn: "root"
 })
 export class ProjectService {
-  apiUrl: string = "http://localhost:3000/projects";
+  apiUrl: string = "http://localhost:8080/projects";
 
   constructor(private http: HttpClient) {}
 
   getProjects(): Observable<Project[]> {
     return this.http.get<Project[]>(this.apiUrl);
   }
+
+  addProject(project): Observable<Project> {
+    return this.http.post<Project>(this.apiUrl, project);
+  }
+
 }
