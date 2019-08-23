@@ -1,1 +1,3 @@
-<p style="padding-top: 40px">login works!</p>
+<ngx-auth-firebaseui [providers]="[ providers.Google, providers.Github]" (onSuccess)="printUser($event)" (onError)="printError()">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</ngx-auth-firebaseui>
