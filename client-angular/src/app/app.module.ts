@@ -12,9 +12,10 @@ import { CustomersComponent } from './customers/customers.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { DemoComponent } from './demo/demo.component';
 import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, ProjectDisplayComponent, HomeComponent, NavComponent, CustomersComponent, PricingComponent, DemoComponent, LoginComponent,  ProjectNewComponent],
+  declarations: [AppComponent, ProjectDisplayComponent, HomeComponent, NavComponent, CustomersComponent, PricingComponent, DemoComponent, LoginComponent,  ProjectNewComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
