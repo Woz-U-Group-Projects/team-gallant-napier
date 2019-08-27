@@ -1,1 +1,29 @@
-<p>ticket-form works!</p>
+<form [formGroup]="myForm" (ngSubmit)="submitHandler()">
+
+    <hr>
+
+    <mat-form-field>
+        <input matInput placeholder="name" fromControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="busName" fromControlName="busName">
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="descripOfIssue" fromControlName="descripOfIssue"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="status" fromControlName="status">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="techAssigned" fromControlName="techAssigned">
+    </mat-form-field>
+
+    <button mat-button color="primary" type="submit"></button>
+
+
+
+
+</form>
+<div *ngIf="success" class="notification is-success">
+    We Have recieved your submission!
+</div>
