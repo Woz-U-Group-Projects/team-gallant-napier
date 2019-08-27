@@ -7,7 +7,7 @@ import{ AuthProvider } from 'ngx-auth-firebaseui';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  providers =AuthProvider;
+  providers = AuthProvider;
   constructor() { }
 
   ngOnInit() {

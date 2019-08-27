@@ -1,0 +1,29 @@
+<form [formGroup]="myForm" (ngSubmit)="submitHandler()">
+
+    <hr>
+
+    <mat-form-field>
+        <input matInput placeholder="name" fromControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="busName" fromControlName="busName">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="email" fromControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="phoneNum" fromControlName="phoneNum">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="zipCode" fromControlName="zipCode">
+    </mat-form-field>
+
+    <button mat-button color="primary" type="submit"></button>
+
+
+
+
+</form>
+<div *ngIf="success" class="notification is-success">
+    We Have recieved your submission!
+</div>

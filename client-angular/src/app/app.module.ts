@@ -18,6 +18,16 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { TicketFormComponent } from './ticket-form/ticket-form.component';
+import { UserPageComponent } from './user-page/user-page.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -29,7 +39,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     PricingComponent, 
     DemoComponent, 
     LoginComponent,  
-    ProjectNewComponent
+    ProjectNewComponent, UserInfoComponent, TicketFormComponent, UserPageComponent
   ],
 
   imports: [
@@ -41,6 +51,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AngularFirestoreModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatChipsModule,
  
     // Specify the ngx-auth-firebaseui library as an import
     NgxAuthFirebaseUIModule.forRoot({
