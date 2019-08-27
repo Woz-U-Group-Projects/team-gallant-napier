@@ -29,7 +29,25 @@ export class TicketFormComponent implements OnInit {
       techAssigned:''
 
     })
+    this.myForm.valueChanges.subscribe()
+  }
 
+  async submitHandler(){
+    this.loading = true;
+
+    const formValue = this.myForm.value;
+
+    try {
+      await this.afs.collection('Ticket').add(formValue);
+      this.success = true;
+    }
+    catch(err){
+      console.error(err)
+    }
+    this.loading = false;
   }
 
 }
+  
+
+
