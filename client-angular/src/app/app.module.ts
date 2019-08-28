@@ -13,9 +13,10 @@ import { PricingComponent } from './pricing/pricing.component';
 import { DemoComponent } from './demo/demo.component';
 import { LoginComponent } from './login/login.component';
 import { ProjectUpdateComponent } from './project-update/project-update.component';
-
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
-  declarations: [AppComponent, ProjectDisplayComponent, HomeComponent, NavComponent, CustomersComponent, PricingComponent, DemoComponent, LoginComponent,  ProjectNewComponent, ProjectUpdateComponent],
+  declarations: [AppComponent, ProjectDisplayComponent, HomeComponent, NavComponent, CustomersComponent, PricingComponent, DemoComponent, LoginComponent,  ProjectNewComponent, ProjectUpdateComponent, FooterComponent],
+
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
