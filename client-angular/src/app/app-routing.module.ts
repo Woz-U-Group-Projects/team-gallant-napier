@@ -10,6 +10,7 @@ import { ProjectUpdateComponent } from './project-update/project-update.componen
 import { ProjectDisplayComponent } from './project-display/project-display.component';
 
 
+
 const routes: Routes = [
   {path:  "", pathMatch:  "full",redirectTo:  "home"},
   {path: "home", component: HomeComponent},
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: "demo", component: DemoComponent},
   {path: "login", component: LoginComponent},
   {path: "new" , component: ProjectNewComponent},
-  {path: "update", component: ProjectUpdateComponent},
+  {path: "update/:id", component: ProjectUpdateComponent},
   {path: "display", component: ProjectDisplayComponent}
 ];
 
