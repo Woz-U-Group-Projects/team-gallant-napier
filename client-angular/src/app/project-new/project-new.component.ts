@@ -15,9 +15,9 @@ export class ProjectNewComponent implements OnInit {
 
   projects: Project[] = [];
 
-  addProject(project) {
+  addProject() {
     this.projectService.addProject(this.project).subscribe(project => (this.project = project));
-    //this.router.navigate(['/']);
+    this.router.navigate(['/display']);
   }
 
 

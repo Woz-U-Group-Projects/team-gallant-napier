@@ -1,0 +1,27 @@
+<div class="container">
+    
+    <h2>Edit a ticket</h2>
+
+    <div id="selected">
+        <ul>
+            <li>
+                {{editProject.createdBy}} <br>
+                {{editProject.name}} <br>
+            </li>
+        </ul>
+    </div>
+    
+    <form>
+        <div class="form-group">
+            <label for="createdBy">Created By</label>
+            <input type="text" [(ngModel)]="editProject.createdBy" class="form-control" name="createdBy" placeholder="Your Name" />
+        </div>
+        <div class="form-group" id="issue">
+            <label for="issue">Issue</label>
+            <textarea type="text" [(ngModel)]="editProject.name" class="form-control" name="issue" rows="5" placeholder="Issue" ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" (click)="updateProject()">Submit</button>
+        </div>
+    </form>
+</div>

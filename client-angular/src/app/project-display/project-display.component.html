@@ -1,7 +1,13 @@
+<div class="container">
 <h2>Project List</h2>
-
-<ul>
-  <li *ngFor="let project of projects">
-    {{ project.id }} : {{ project.name }} : {{ project.createdBy }}
-  </li>
-</ul>
+<!--  Still need to tune the view with a table format  -->
+  <div class="list-group">
+    <ul>
+      <li *ngFor="let project of projects" class="list-group-item">
+        {{ project.id }} : {{ project.name }} : {{ project.createdBy }}
+        <button class="btn-md btn-primary" [routerLink] = "['/update', project.id]">Edit</button>
+        <button class="btn-md btn-danger" (click)="deleteProject(project)">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>

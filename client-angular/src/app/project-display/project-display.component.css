@@ -1,0 +1,15 @@
+div {
+    margin-top: 55px;
+
+}
+
+.container {
+    display: flex;
+}
+
+.end {
+    align-self: flex-end;
+}
+.btn-md {
+    margin: 0 0 0 3px;
+}
