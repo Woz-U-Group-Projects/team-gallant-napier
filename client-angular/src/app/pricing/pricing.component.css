@@ -1,1 +1,10 @@
-/*BLAH BLAH BLAH*/
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+    margin-bottom: 20px;  
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
