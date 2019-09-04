@@ -18,8 +18,6 @@ export class ProjectUpdateComponent implements OnInit {
     this.projectService.updateProject(this.editProject).subscribe(); // => {
 
       this.router.navigate(['/display']); 
-  
-   
   }
 
   ngOnInit() {

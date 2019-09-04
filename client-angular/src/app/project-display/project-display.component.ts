@@ -31,6 +31,7 @@ export class ProjectDisplayComponent implements OnInit {
   }
 */
   ngOnInit() {
+    
     this.getProjects();
   }
 }
