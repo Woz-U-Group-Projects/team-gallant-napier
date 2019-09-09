@@ -1,11 +1,7 @@
-div {
-    margin-top: 80px;
-
-}
-
 .container {
     display: flex;
     flex-direction: column;
+    padding: 60px 0px 15px 0px;
 }
 
 .end {
@@ -13,6 +9,7 @@ div {
 }
 .btn-md {
     margin: 0 0 0 3px;
+    float: right;
 }
 
 .wrapper {
@@ -20,5 +17,21 @@ div {
 }
 td {
     border-bottom: 1px solid black;
+    padding: 0px 15px;
 
+}
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(34, 86, 228);
+    font-size: large;
+}
+.card {
+    width: 100%;
+    margin: 0px;
+}
+.row {
+    height: auto;
 }

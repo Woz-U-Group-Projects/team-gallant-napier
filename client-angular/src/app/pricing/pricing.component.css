@@ -1,10 +1,16 @@
 .card-pricing.popular {
     z-index: 1;
     border: 3px solid #007bff;
-    margin-bottom: 20px;  
+    margin-bottom: 15px;  
 }
 .card-pricing .list-unstyled li {
     padding: .5rem 0;
     color: #6c757d;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.wrapper {
+    min-height: calc(100vh - 250px);
+}
+.container {
+    padding-top: 80px;
 }

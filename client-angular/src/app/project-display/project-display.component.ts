@@ -3,6 +3,7 @@ import { ProjectService } from "../project.service";
 import { Project } from "../models/project";
 import { Router } from '@angular/router';
 import { HttpHeaders } from '@angular/common/http';
+import { mergeNsAndName } from '@angular/compiler';
 
 @Component({
   selector: "app-project-display",
@@ -31,7 +32,6 @@ export class ProjectDisplayComponent implements OnInit {
   }
 */
   ngOnInit() {
-    
     this.getProjects();
   }
 }
