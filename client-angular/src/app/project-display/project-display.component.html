@@ -7,7 +7,7 @@
       <div class="card border-warning" *ngFor="let project of projects">
         <div class="card-body">  
         <h5 class="card-title"><a [routerLink] = "['/update', project.id]" class="card-link">{{ project.createdBy}}</a></h5>
-          <a [routerLink] = "['/update', project.id]" class="card-link">{{ project.id}}</a> &nbsp;
+          <a [routerLink] = "['/update', project.id]" class="card-link">{{ project.id}}</a>: &nbsp;
           <a [routerLink] = "['/update', project.id]" class="card-link">{{ project.name }}</a> &nbsp;
           <button class="btn-md btn-danger" (click)="deleteProject(project)">Delete</button>
         </div>
