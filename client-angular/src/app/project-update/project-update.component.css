@@ -4,3 +4,6 @@ div {
 textarea {
     margin-bottom: 5px;
 }
+.wrapper {
+    min-height: calc(100vh - 250px);
+}
