@@ -35,3 +35,7 @@ a:hover {
 .row {
     height: auto;
 }
+.btn-md {
+  float: right;
+  margin-right: 3px;
+}
