@@ -2,35 +2,17 @@
 <div class="wrapper">
   <div class="container">
   <h2>Ticket List</h2><br>
-  <!--  Still need to tune the view with a table format  
-    <div class="list-group">
-      <ul>
-        <li *ngFor="let project of projects" class="list-group-item">
-          {{ project.id }} : {{ project.name }} : {{ project.createdBy }}
-          <button class="btn-md btn-primary" [routerLink] = "['/update', project.id]">Edit</button>
+    
+  <div class="row">
+      <div class="card border-warning" *ngFor="let project of projects">
+        <div class="card-body">  
+        <h5 class="card-title"><a [routerLink] = "['/update', project.id]" class="card-link">{{ project.createdBy}}</a></h5>
+          <a [routerLink] = "['/update', project.id]" class="card-link">{{ project.id}}</a> &nbsp;
+          <a [routerLink] = "['/update', project.id]" class="card-link">{{ project.name }}</a> &nbsp;
           <button class="btn-md btn-danger" (click)="deleteProject(project)">Delete</button>
-        </li>
-      </ul>
-    </div>-->
-
-    <table>
-      <thead>
-        <th>Id#</th>
-        <th>Ticket Issue</th>
-        <th>Submitted by</th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let project of projects">
-          <td>{{ project.id }}</td>
-          <td>{{ project.name}}</td>
-          <td>{{ project.createdBy }}</td>
-          <td>
-            <button class="btn-md btn-primary" [routerLink] = "['/update', project.id]">Edit</button>
-            <button class="btn-md btn-danger" (click)="deleteProject(project)">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
